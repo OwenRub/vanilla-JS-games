@@ -1,0 +1,83 @@
+:root{
+    font-family: 'Fredoka', sans-serif;
+}
+body{
+    height: 100vh;
+    margin: 0;
+    background: #EBC4E0;
+}
+.layout{
+    margin: 0 auto;
+    width: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.attemps{
+    margin: 20px 0;
+    padding: 0px 15px;
+    color: white;
+    border-radius: 8px;
+    background-color: #2b8043;
+    font-weight: lighter;
+}
+#board{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+img{
+    margin: 2px;
+}
+img:hover{
+    cursor: pointer;
+}
+.dead-img{
+    margin: 2px;
+}
+.dead-img:hover{
+    cursor: default;
+}
+.play-again{
+    font-size: 16px;
+    border-radius: 16px;
+    border: none;
+    padding: 8px;
+    margin-top: 20px;
+    color: white;
+    background-color: #3cc964;
+    box-shadow: 3px 3px #2b8043;
+}
+.play-again:hover{
+    cursor: pointer;
+}
+.play-again:active{
+    position: relative;
+    top: 3px;
+    box-shadow: none;
+}
+.disabled{
+    font-size: 16px;
+    border-radius: 16px;
+    border: none;
+    padding: 8px;
+    margin-top: 20px;
+    color: white;
+    background-color: #3cc964;
+    box-shadow: 3px 3px #2b8043;
+    opacity: 0.5;
+}
+.disabled:hover{
+    cursor: default;
+}
+
+@media (max-width: 630px){
+    .layout{
+        width: 420px;
+    }
+}
+@media (max-width: 420px){
+    .layout{
+        width: 315px;
+    }
+}
