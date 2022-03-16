@@ -4,21 +4,25 @@
 body{
     height: 100vh;
     margin: 0;
-    background: #EBC4E0;
+    background: /*#EBC4E0*/#6E8894;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .layout{
+    padding: 24px;
     margin: 0 auto;
     width: 630px;
     display: flex;
+    background-color: white;
     flex-direction: column;
     align-items: center;
 }
 .attemps{
-    margin: 20px 0;
+    margin-top: 10px;
     padding: 0px 15px;
     color: white;
-    border-radius: 8px;
-    background-color: #2b8043;
+    background-color: #9C387B;
     font-weight: lighter;
 }
 #board{
@@ -40,13 +44,12 @@ img:hover{
 }
 .play-again{
     font-size: 16px;
-    border-radius: 16px;
     border: none;
     padding: 8px;
     margin-top: 20px;
     color: white;
-    background-color: #3cc964;
-    box-shadow: 3px 3px #2b8043;
+    background-color: #BE4997;
+    box-shadow: 3px 3px #DEA2CA;
 }
 .play-again:hover{
     cursor: pointer;
@@ -58,25 +61,31 @@ img:hover{
 }
 .disabled{
     font-size: 16px;
-    border-radius: 16px;
     border: none;
     padding: 8px;
     margin-top: 20px;
     color: white;
-    background-color: #3cc964;
-    box-shadow: 3px 3px #2b8043;
+    background-color: #BE4997;
+    box-shadow: 3px 4px #DEA2CA;
     opacity: 0.5;
 }
 .disabled:hover{
     cursor: default;
 }
+a {
+    text-decoration: none;
+    color: #BE4997;
+}
+p{
+    margin-bottom: 20px;
+}
 
-@media (max-width: 630px){
+@media (max-width: 690px){
     .layout{
         width: 420px;
     }
 }
-@media (max-width: 420px){
+@media (max-width: 460px){
     .layout{
         width: 315px;
     }
